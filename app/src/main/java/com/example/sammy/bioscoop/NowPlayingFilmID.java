@@ -9,13 +9,20 @@ import java.util.ArrayList;
  */
 
 public class NowPlayingFilmID implements FilmIDAvailable {
-    private final String url = "https://api.themoviedb.org/3/movie/now_playing?api_key=9356cb1f42f053e63a72c6bf6ca12171&language=en-US&page=1&region=NL";
+//    private final String url = "https://api.themoviedb.org/3/movie/now_playing?api_key=9356cb1f42f053e63a72c6bf6ca12171&language=en-US&page=1&region=NL";
+    private final String url = "https://api.themoviedb.org/3/movie/now_playing?region=NL&page=1&language=en-US&api_key=9356cb1f42f053e63a72c6bf6ca12171";
+
+
     private ArrayList<Integer> moviesID;
 
     private static final String TAG = "NowPlayingFilmID";
+    private FilmIDCallback listener = null;
 
-    public NowPlayingFilmID(){
+
+    public NowPlayingFilmID(FilmIDCallback listener){
+        this.listener = listener;
         moviesID = new ArrayList<>();
+        fetchMoviesID();
     }
 
     public void fetchMoviesID(){
@@ -36,6 +43,12 @@ public class NowPlayingFilmID implements FilmIDAvailable {
         Log.d(TAG, "addMoviesID: is called. Add moviesID" + id);
         this.moviesID.add(id);
     }
+
+    public void callFilmID(){
+
+        listener.filmIDCallback(getMoviesIDs());
+    }
+
 
 
 }

@@ -111,6 +111,9 @@ public class FilmIDTask extends AsyncTask<String, Void, String> {
                 // call back
                 listener.addMoviesID(id);
             }
+
+                listener.callFilmID();
+
         } catch( JSONException ex) {
             Log.e(TAG, "onPostExecute JSONException " + ex.getLocalizedMessage());
         }

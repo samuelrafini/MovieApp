@@ -7,4 +7,5 @@ package com.example.sammy.bioscoop;
 public interface FilmIDAvailable {
 
     void addMoviesID(int id);
+    void callFilmID();
 }
