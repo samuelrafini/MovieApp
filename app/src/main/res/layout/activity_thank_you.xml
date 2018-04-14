@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
 
 
@@ -55,82 +56,76 @@
                 android:textColor="@android:color/black"/>
 
 
-
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
-            android:background="#2e2e2e"
-            android:layout_width="match_parent"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_height="0dp"
-            android:layout_weight="0.4"
-            android:weightSum="1">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Screen"
-                android:textSize="20dp"
-                android:textAlignment="center"
-                android:textColor="#ffff"/>
-        </LinearLayout>
-
-
-        <TableLayout
-            android:id="@+id/TableSeats"
-            android:background="#ffff"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="4.5"
-            android:stretchColumns="*">
-        </TableLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.4"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_weight="3"
             android:weightSum="3">
 
+            ]
 
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#ffff"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_weight="3"
+                android:weightSum="4"
+                android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView"
-            android:background="#ffff"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text=""
-            android:textColor="#3f2b96"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:gravity="center"
-           />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Bedankt voor uw aankoop. Klik op de knop gegevens om uw kaartje te zien"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="#2e2e2e"
+                    />
 
-        <Button
-            android:id="@+id/reserveerButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:background="#3f2b96"
-            android:text="Reserveer Tickets"
-            android:textColor="#ffffff"
-            android:textSize="15dp"
-            android:textAlignment="center"></Button>
+            </LinearLayout>
 
         </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            >
+
+
+            <Button
+                android:id="@+id/toHome"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#3f2b96"
+                android:text="Naar hoofdpagina"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textAlignment="center"></Button>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
     </LinearLayout>
-
-
-
-
-
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:layout_marginBottom="10dp"
+
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:weightSum="3">
+
+
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:weightSum="6"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.3"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#3f2b96"
+                android:padding="5dp"
+                android:text="Game Night (SpeelFilm) testtesttest" />
+
+            <TextView
+                android:id="@+id/directorText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.4"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#2e2e2e"
+                android:padding="5dp"
+                android:text="Director: Frank Frank" />
+            <TextView
+                android:id="@+id/genreText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:textColor="#2e2e2e"
+                android:textSize="12dp"
+                android:textStyle="bold"
+
+                android:padding="5dp"
+                android:text="Genre: Comedy, Action, Thriller, Drama, Science fiction"/>
+
+            <TextView
+                android:id="@+id/certificationText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:paddingLeft="5dp"
+                android:textStyle="bold"
+                android:background="#3f2b96"
+                android:textColor="#ffffff"
+                android:text="10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+    <!--android:background="@drawable/gradient_background"-->

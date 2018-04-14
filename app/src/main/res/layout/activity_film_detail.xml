@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sammy.bioscoop.FilmDetailActivity">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/gradient_background"
+        android:layout_width="match_parent"
+        android:weightSum="8"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#3f2b96"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_marginBottom="10dp"
+            android:weightSum="1">
+
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/logoavans"/>
+
+            <Button
+                android:id="@+id/ticketButton"
+                android:layout_width="102dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Tickets"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/contact"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Contact"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/imgViewDetailActivity"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.2"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#ffff"
+                android:layout_marginRight="10dp"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_weight="1.8"
+                android:weightSum="4"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/titleDetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.4"
+                    android:textStyle="bold"
+                    android:textColor="#3f2b96"
+                    android:text="Black Panther text long test title "
+                    android:textSize="22dp"
+                    android:padding="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/actorsDetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.3"
+                    android:text="Black Panther text long test title "
+                    android:textSize="12dp"
+                    android:padding="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/genreDetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:text="Black Panther text long test title "
+                    android:textSize="12dp"
+                    android:padding="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/directorDetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:text="Black Panther text long test title "
+                    android:textSize="12dp"
+                    android:paddingLeft="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/runtimeDetailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:text="107 min "
+                    android:textSize="10dp"
+                    android:textColor="#3f2b96"
+                    android:paddingLeft="0dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffff"
+            android:weightSum="3">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Overview"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#3f2b96"
+            android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/textOverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new leader. However, T'Challa soon finds that he is challenged for the throne by factions within his own country as well as without.  Using powers reserved to Wakandan kings, T'Challa assumes the Black Panther mantel to join with girlfriend Nakia, the queen-mother, his princess-kid sister,  members of the Dora Milaje (the Wakandan \specialforces\), and an American secret agent, to prevent Wakanda from being dragged into a world war."
+                android:textSize="20dp" />
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            >
+
+
+            <Button
+                android:id="@+id/seatselectionButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#3f2b96"
+                android:text="Reserveer Tickets"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textAlignment="center"></Button>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
